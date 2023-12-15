@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labtest.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>LabTest Form</title>
+</head>
+
+<body>
+    <section id="side">
+        <aside="form">
+            </aside>
+            <header>
+                <h1>LabTestDetails</h1>
+                <p>Read below instructions before proceeding:<br> Make sure you fill all the fileds where * is provided
+                </p>
+            </header>
+            <form action="#">
+                <article>
+                    <h3>1.Your Contact Details</h3>
+                    <h3>FullName</h3>
+                    <input type="text" title="name" required spellcheck="true">
+                </article>
+                <article>
+                    <h3>Patient Id if exists</h3>
+                    <input type="number" required>
+                </article>
+                <article>
+                    <h3>Phone No</h3>
+                    <input type="number" min="0000000000" max="9999999999" required>
+                </article>
+                <article>
+                    <h3>Email Address</h3>
+                    <input type="email" required>
+                </article>
+                <article>
+                    <h3>2.Address</h3>
+                    <h3>H:No</h3>
+                    <input type="text" required>
+                    <h3>Street</h3>
+                    <input type="text" required>
+                    <h3>Area</h3>
+                    <input type="text" required>
+                    <h3>District</h3>
+                    <select name="District" id="district" required>
+                        <option value="">--Select--</option>
+                        <option value="EastGodavari">East Godavari </option>
+                        <option value="WestGodavari">WestGodavari</option>
+                        <option value="Vijawada">Vijawada</option>
+                        <option value="Chitoor">Chitoor</option>
+                    </select>
+                </article>
+                <article>
+                    <h3>3.Choose the Test Type</h3>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option3" value="Thyroid Stimulating Hormone (TSH)">
+                    <label for="c4">Thyroid Stimulating Hormone (TSH)
+                    </label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option1" value="GlucoseTest">
+                    <label for="c1">GlucoseTest</label>
+                    <br>
+                </article>
+                <article>
+                    <h3>4.Do you want a hard copy of the report also</h3>
+                    <input type="radio" id="c5" name="option" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="False">
+                    <label for="c6">No</label>
+                </article>
+                <article>
+                    <h3>5.Select Your Comfortable Date and Time</h3>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </article>
+                <br>
+                <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;
+                <button type="reset" class="btn btn-primary">Reset</button>
+            </form>
+            </aside>
+    </section>
+    <div class="image-container">
+        <img src="./Images/Lab-Test/lab-test.jpg" alt="Image" class="fixed-image">
+    </div>
+</body>
+
+</html>
